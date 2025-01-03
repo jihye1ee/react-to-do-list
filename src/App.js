@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function App() {
   const [toDo, setToDo] = useState("");
-  const [toDoList, setToDoList] = useState([]);
+  const [toDoList, setToDoList] = useState([]); // 입력되는 to-do를 받을 빈 배열 state
   const onChange = (event) => setToDo(event.target.value);
   const onSubmit = (event) => {
     event.preventDefault();
